@@ -1,5 +1,11 @@
-flask
-tensorflow-cpu
+click==8.0.3
+colorma==0.4.4
+Flask==2.0.2
+itsdangerous==2.0.1
 gunicorn
-pillow
+Jinja2==3.0.2
+MarkupSafe==2.0.1
 numpy
+pillow
+tensorflow-cpu
+WerkZeug==2.0.2
