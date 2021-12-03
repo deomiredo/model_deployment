@@ -9,3 +9,4 @@ numpy
 pillow
 tensorflow-cpu
 WerkZeug==2.0.2
+flask
