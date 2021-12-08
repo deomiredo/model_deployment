@@ -29,9 +29,9 @@ def predict_label(img_path):
     q_pred = model.predict(q)
     predicted_bit = int(q_pred)
     if q_pred<=0.5 :
-        return "Seledri (Celery)"
+        return "Seledri"
     else :
-        return "Sirih (Betel)"
+        return "Sirih"
     #return class_dict[predicted_bit]
 
 @app.route('/', methods=['GET', 'POST'])
