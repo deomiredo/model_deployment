@@ -28,7 +28,11 @@ def predict_label(img_path):
     q = np.array(q, dtype='float') / 255.0
     q_pred = model.predict(q)
     predicted_bit = int(q_pred)
-    return class_dict[predicted_bit]
+    if q_pred<=0.5 :
+        return "Seledri (Celery)"
+    else :
+        return "Sirih (Betel)"
+    #return class_dict[predicted_bit]
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
